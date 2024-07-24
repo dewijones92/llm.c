@@ -1,0 +1,2 @@
+make train_gpt2fp32cu
+./train_gpt2fp32cu
