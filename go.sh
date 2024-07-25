@@ -20,7 +20,13 @@ if [ -z "$TRAIN_CMD" ]; then
     exit 1
 fi
 
+# Extract the base path
+BASE_PATH="../../edu_fineweb10B"
+
+# List everything in the base path
+ls -la $BASE_PATH
+
 # Run the training command
 $TRAIN_CMD \
-    -i "../../edu_fineweb10B/train.bin" \
-    -j "../../edu_fineweb10B/val.bin"**
+    -i "$BASE_PATH/train.bin" \
+    -j "$BASE_PATH/val.bin"
