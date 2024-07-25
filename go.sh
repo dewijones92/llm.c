@@ -1,7 +1,7 @@
 #!/bin/bash
 set -ex
 
-make
+make USE_CUDNN=1
 make train_gpt2cu USE_CUDNN=1
 
 # Define the preferred order of executables
