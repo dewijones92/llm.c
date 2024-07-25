@@ -4,7 +4,7 @@ set -ex
 make
 
 # Define the preferred order of executables
-executables=("train_gpt2_cuda" "train_gpt2_fp32" "train_gpt")
+executables=("train_gpt2_cuda" "train_gpt2_fp32" "train_gpt2")
 
 # Find the first available executable
 for exe in "${executables[@]}"; do
