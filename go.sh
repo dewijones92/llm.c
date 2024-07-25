@@ -1,7 +1,7 @@
 #!/bin/bash
 set -ex
 
-make train_gpt2fp32cu
+make
 
 # Define the preferred order of executables
 executables=("train_gpt2_cuda" "train_gpt2_fp32" "train_gpt")
