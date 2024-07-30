@@ -3,8 +3,8 @@ set -ex
 
 #CUDNN_FRONTEND_PATH=$CUDNN_PATH
 
-make USE_CUDNN=1 DENABLE_BF16
-make train_gpt2cu USE_CUDNN=1 DENABLE_BF16
+make USE_CUDNN=1 PRECISION=FP16
+make train_gpt2cu USE_CUDNN=1 PRECISION=FP16
 
 # Define the preferred order of executables
 executables=("train_gpt2_cuda" "train_gpt2_fp32" "train_gpt2")
