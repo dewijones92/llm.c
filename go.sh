@@ -29,8 +29,6 @@ if [ -z "$TRAIN_CMD" ]; then
     exit 1
 fi
 
-TRAIN_CMD=""
-
 # Extract the base path
 BASE_PATH="../../edu_fineweb10B"
 
